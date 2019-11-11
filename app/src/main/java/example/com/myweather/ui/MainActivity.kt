@@ -13,8 +13,7 @@ import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity(), MainContract.View {
 
-    var presenter: MainPresenter =
-        MainPresenter()
+    var presenter: MainPresenter = MainPresenter()
     var adapter: WeatherAdapter? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {

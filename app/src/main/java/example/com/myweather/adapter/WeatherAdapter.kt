@@ -72,7 +72,9 @@ class WeatherAdapter(private val context: Context) : RecyclerView.Adapter<Recycl
             glide.asBitmap()
                 .load(getImageUrl(today?.weatherStateAbbr))
                 .into(itemHolder.todayStateIv)
-            itemHolder.todayTempTv.text = "${today?.theTemp?.toInt()}${degree}C"
+            val sb: StringBuilder = StringBuilder()
+            sb.append(today?.theTemp?.toInt()).append(degree).append("C")
+            itemHolder.todayTempTv.text = sb
             itemHolder.todayHumidityTv.text = "${today?.humidity}%"
 
             // 내일
@@ -81,7 +83,9 @@ class WeatherAdapter(private val context: Context) : RecyclerView.Adapter<Recycl
             glide.asBitmap()
                 .load(getImageUrl(tomorrow?.weatherStateAbbr))
                 .into(itemHolder.tomorrowStateIv)
-            itemHolder.tomorrowTempTv.text = "${tomorrow?.theTemp?.toInt()}${degree}C"
+            val sb1 = StringBuilder()
+            sb1.append(tomorrow?.theTemp?.toInt()).append(degree).append("C")
+            itemHolder.tomorrowTempTv.text = sb1
             itemHolder.tomorrowHumidityTv.text = "${tomorrow?.humidity}%"
 
         }
