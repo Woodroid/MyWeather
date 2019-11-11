@@ -1,6 +1,9 @@
-package example.com.myweather
+package example.com.myweather.model
 
-import android.util.Log
+import example.com.myweather.presenter.MainPresenter
+import example.com.myweather.retrofit.WeatherApi
+import example.com.myweather.retrofit.response.Location
+import example.com.myweather.retrofit.response.LocationSearch
 import retrofit2.Call
 
 class MainModel(val presenter: MainPresenter) {

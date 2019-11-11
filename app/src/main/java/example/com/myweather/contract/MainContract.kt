@@ -1,4 +1,7 @@
-package example.com.myweather
+package example.com.myweather.contract
+
+import example.com.myweather.model.MainModel
+import example.com.myweather.retrofit.response.Location
 
 interface MainContract {
 

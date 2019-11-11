@@ -1,4 +1,4 @@
-package example.com.myweather
+package example.com.myweather.adapter.viewHolder
 
 import android.view.View
 import androidx.recyclerview.widget.RecyclerView

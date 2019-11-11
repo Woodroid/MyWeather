@@ -1,9 +1,10 @@
-package example.com.myweather
+package example.com.myweather.adapter.viewHolder
 
 import android.view.View
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import example.com.myweather.R
 
 class WeatherViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
 

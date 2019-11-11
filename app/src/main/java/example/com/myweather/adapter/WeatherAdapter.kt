@@ -1,10 +1,16 @@
-package example.com.myweather
+package example.com.myweather.adapter
 
 import android.content.Context
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
+import example.com.myweather.R
+import example.com.myweather.adapter.viewHolder.WeatherHeaderViewHolder
+import example.com.myweather.adapter.viewHolder.WeatherViewHolder
+import example.com.myweather.contract.WeatherAdapterContract
+import example.com.myweather.retrofit.WeatherApi
+import example.com.myweather.retrofit.response.Location
 
 class WeatherAdapter(private val context: Context) : RecyclerView.Adapter<RecyclerView.ViewHolder>(),
     WeatherAdapterContract.View, WeatherAdapterContract.Model {

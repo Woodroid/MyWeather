@@ -1,4 +1,4 @@
-package example.com.myweather
+package example.com.myweather.retrofit.response
 
 import com.google.gson.annotations.SerializedName
 

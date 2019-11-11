@@ -1,4 +1,9 @@
-package example.com.myweather
+package example.com.myweather.presenter
+
+import example.com.myweather.model.MainModel
+import example.com.myweather.contract.MainContract
+import example.com.myweather.contract.WeatherAdapterContract
+import example.com.myweather.retrofit.response.Location
 
 class MainPresenter : MainContract.Presenter {
 

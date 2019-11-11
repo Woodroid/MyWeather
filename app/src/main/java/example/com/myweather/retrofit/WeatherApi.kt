@@ -1,6 +1,8 @@
-package example.com.myweather
+package example.com.myweather.retrofit
 
 import com.google.gson.GsonBuilder
+import example.com.myweather.retrofit.response.Location
+import example.com.myweather.retrofit.response.LocationSearch
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Call

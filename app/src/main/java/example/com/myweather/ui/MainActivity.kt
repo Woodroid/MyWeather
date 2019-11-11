@@ -1,14 +1,20 @@
-package example.com.myweather
+package example.com.myweather.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import androidx.recyclerview.widget.LinearLayoutManager
+import example.com.myweather.R
+import example.com.myweather.adapter.WeatherAdapter
+import example.com.myweather.contract.MainContract
+import example.com.myweather.model.MainModel
+import example.com.myweather.presenter.MainPresenter
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity(), MainContract.View {
 
-    var presenter: MainPresenter = MainPresenter()
+    var presenter: MainPresenter =
+        MainPresenter()
     var adapter: WeatherAdapter? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
